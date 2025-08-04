@@ -9,15 +9,15 @@ const NavBar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>FS</div>
+      <div className={styles.logo}>Vanshika Singh</div>
 
       <ul className={`${styles.navLinks} ${isOpen ? styles.active : ""}`}>
-        <li><a href="#hero" onClick={closeMenu}>Hero</a></li>
+        <li><a href="#hero" onClick={closeMenu}>Home</a></li>
         <li><a href="#about" onClick={closeMenu}>About</a></li>
         <li><a href="#projects" onClick={closeMenu}>Portfolio</a></li>
         <li><a href="#services" onClick={closeMenu}>Services</a></li>
         <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
-        <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+    
       </ul>
 
       <a href="#contact" className={styles.contactBtn}>Contact Me</a>

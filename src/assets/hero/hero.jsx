@@ -10,7 +10,7 @@ const Hero = () => {
           <span>Full Stack Software Developer</span>
         </h1>
         <p>
-          I design and build modern web & mobile applications with beautiful UIs and efficient backends.
+          A developer who enjoys creating things, learning on the go, and working my way toward bigger challenges.
         </p>
         <button className={styles.btn}>Recent Projects</button>
       </div>
