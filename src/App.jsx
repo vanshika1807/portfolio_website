@@ -1,10 +1,12 @@
-import heroImage from "./assets/hero/hero-image.jpg";
 import { useEffect } from "react";
 import styles from "./App.module.css";
 import emailIcon from "./assets/contact/email-img.png";
 import githubIcon from "./assets/contact/github.png";
 import linkedinIcon from "./assets/contact/linkedin.png";
 import NavBar from "./assets/nav/navBar";
+import Portfolio from "./assets/Portfolio/Portfolio"; 
+import Hero from "./assets/hero/hero";
+import About from "./assets/about/About";
 
 function App() {
   useEffect(() => {
@@ -16,20 +18,17 @@ function App() {
       {/* ✅ Navbar */}
       <NavBar />
 
-      {/* ✅ Hero Section */}
-      <section id="hero" className={styles.hero}>
-        <img src={heroImage} alt="Hero" className={styles.heroImg} />
-        <h1>Hello, I am <span>Vanshika Singh</span></h1>
-        <p>Java Full Stack Developer | Passionate about clean UI & scalable solutions</p>
-      </section>
+    
+      <Hero/>
 
       {/* ✅ About Section */}
-      <section id="about" className={styles.card}>
+      {/*<section id="about" className={styles.card}>
         <h2>About Me</h2>
         <p>I am a Java Full Stack Developer passionate about sleek web apps, cloud-native projects, and AI tools. Currently at Cognizant, exploring data analytics & AI integration.</p>
-      </section>
+      </section>*/}
+      <About />
 
-      {/* ✅ Skills Section */}
+      {/* ✅ Skills Section 
       <section id="skills" className={styles.card}>
         <h2>Skills</h2>
         <ul className={styles.skills}>
@@ -39,7 +38,9 @@ function App() {
           <li>Docker, Azure</li>
           <li>AI Integration</li>
         </ul>
-      </section>
+      </section> */}
+
+      <Portfolio/>
 
       {/* ✅ Projects Section */}
       <section id="projects" className={styles.card}>

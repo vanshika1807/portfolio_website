@@ -1,0 +1,48 @@
+.portfolio {
+  padding: 4rem 2rem;
+  background-color: #0c0c1d;
+  color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  background-color: #1a1a2e;
+  padding: 1rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #938eef;
+}
+
+.description {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #ccc;
+}
+
+.link {
+  color: #00d8ff;
+  text-decoration: none;
+  font-weight: bold;
+}
