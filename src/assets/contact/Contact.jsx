@@ -33,7 +33,6 @@ export default function Contact() {
 
       {/* Footer */}
       <section id="contact" className={styles.card}>
-              <h2>Contact</h2>
               <div className={styles.contactIcons}>
                 <a href="mailto:vanshika@example.com">
                   <img src={emailIcon} alt="Email" />
