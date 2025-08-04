@@ -1,6 +1,97 @@
 @import "./vars.css";
-.App{
-    background-color: var(--color-bg);
-    width: 100%;
-    height: 100%;
+
+.container {
+  text-align: center;
+}
+
+/* Header removed because Navbar handles it */
+.hero {
+  margin-top: 80px;
+  text-align: center;
+  background: var(--color-card);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow-soft);
+}
+
+.heroImg {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  color: var(--color-primary);
+}
+
+/* Cards */
+.card {
+  background: var(--color-card);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  text-align: left;
+}
+
+.skills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.skills li {
+  background: var(--color-secondary);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.project {
+  background: var(--color-bg);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow-soft);
+}
+
+.project a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  color: var(--color-secondary);
+}
+
+/* Contact */
+.contactIcons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.contactIcons img {
+  width: 40px;
+  transition: transform 0.3s;
+}
+
+.contactIcons img:hover {
+  transform: scale(1.2);
+}
+
+/* Footer */
+.footer {
+  background: var(--color-dark);
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
 }

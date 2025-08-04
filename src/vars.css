@@ -1,12 +1,116 @@
 :root{
     /*colors*/
-    --color-text: #fff;
-    --color-primary : #576cbc;
-    --color-secondary: #19357d;
-    --color-dark: #0b2447;
-    --color-bg: #04152d;
+    --color-text: #ffffff;
+    --color-muted: #64748b;
+    --color-primary : #6366f1;
+    --color-secondary: #22d3ee;
+    --color-dark: #0f172a;
+    --color-bg: #0f111d;
+    --color-card: #ffffff;
+    --color-accent: #5b61f3;
+    --color-highlight: #8e60f6;
+
+
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
 
     /*fonts*/
     --font-robot: "Roboto";
     
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--color-secondary);
+}
+
+.card {
+  background: var(--color-card);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+}
+
+.skills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  background: var(--color-secondary);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.project {
+  background: var(--color-bg);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow-soft);
+}
+
+.project a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  color: var(--color-secondary);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--color-dark);
+  color: #fff;
+  margin-top: 2rem;
 }
