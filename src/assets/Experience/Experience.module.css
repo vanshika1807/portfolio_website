@@ -1,0 +1,37 @@
+.experienceSection {
+  padding: 60px 20px;
+  background: #0d0d2b;
+  text-align: center;
+}
+
+.heading {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.iconGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.iconCard {
+  color: white;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.iconCard:hover {
+  transform: scale(1.1);
+  color: #00e0ff;
+}
+
+.iconCard p {
+  margin-top: 10px;
+  font-size: 14px;
+}
