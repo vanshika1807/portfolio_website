@@ -7,10 +7,10 @@ const Hero = () => {
       <div className={styles['hero-text']}>
         <h1>
           I am a <br />
-          <span>Full Stack Software Developer</span>
+          <span>System Ops Engineer</span>
         </h1>
         <p>
-          A developer who enjoys creating things, learning on the go, and working my way toward bigger challenges.
+          I am trying to be a tech geek, passionate about learning new tech stack, cloud-native projects, and AI tools.
         </p>
         <button className={styles.btn}>Recent Projects</button>
       </div>

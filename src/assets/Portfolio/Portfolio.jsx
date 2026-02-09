@@ -8,14 +8,14 @@ const Portfolio = () => {
     mobile: [
       {
         id: 1,
-        title: "Dating Mobile App Design",
+        title: "DB Sentinel",
         description:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
         image: "./ExpensePlus.png",
       },
       {
         id: 2,
-        title: "E Commerce Mobile App Design",
+        title: "StreamPlus +",
         description:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
         image: "./ExpensePlus.png",
@@ -24,13 +24,29 @@ const Portfolio = () => {
     website: [
       {
         id: 3,
-        title: "Landing Page Design",
+        title: "Expense +",
         description: "Sample website project description...",
         image: "./ExpensePlus.png",
       },
     ],
-    desktop: [],
-    other: [],
+    desktop: [{
+        id: 4,
+        title: "OPERO",
+        description: "Sample website project description...",
+        image: "./ExpensePlus.png",
+      },
+    {
+        id: 5,
+        title: "FIBO Hackathon Project",
+        description: "Sample website project description...",
+        image: "./ExpensePlus.png",
+      },],
+    other: [{
+        id: 6,
+        title: "Resume Website",
+        description: "Sample website project description...",
+        image: "./ExpensePlus.png",
+      },],
   };
 
   return (
@@ -41,19 +57,19 @@ const Portfolio = () => {
           className={activeTab === "mobile" ? styles.active : ""}
           onClick={() => setActiveTab("mobile")}
         >
-          Mobile App
+          Useful API
         </button>
         <button
           className={activeTab === "website" ? styles.active : ""}
           onClick={() => setActiveTab("website")}
         >
-          Website
+          CRUD Websites
         </button>
         <button
           className={activeTab === "desktop" ? styles.active : ""}
           onClick={() => setActiveTab("desktop")}
         >
-          Desktop
+          Hackathon
         </button>
         <button
           className={activeTab === "other" ? styles.active : ""}

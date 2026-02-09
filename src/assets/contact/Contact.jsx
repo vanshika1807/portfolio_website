@@ -12,7 +12,8 @@ export default function Contact() {
         {/* Left Side */}
         <div className={styles.left}>
           <h3>Drop Me a Message</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p>I’m always open to discussing new opportunities, collaborations, or interesting problems to solve.
+If you’re looking for someone with experience in systems operations, observability, and backend engineering, feel free to reach out.</p>
           <div className={styles.info}>
             <div><FaPhone /> +92 8864992508</div>
             <div><FaEnvelope /> vanshika18072001@gmail.com</div>

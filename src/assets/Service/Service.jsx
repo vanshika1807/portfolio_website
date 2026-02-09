@@ -4,34 +4,34 @@ import { FaVideo, FaMobileAlt, FaDesktop, FaCode } from "react-icons/fa";
 const services = [
   {
     icon: <FaVideo />,
-    title: "Video Editing",
+    title: "Cognizant",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+      "For a US banking client, I have acted as a first point of contact ensuring fast triage and restoration within defined SLAs.",
   },
   {
     icon: <FaMobileAlt />,
-    title: "Mobile App Development",
+    title: "Cognizant",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+      "Gained hands-on exposure to application operations, incident workflows, and SDLC practices in an enterprise environment.",
   },
   {
     icon: <FaDesktop />,
-    title: "Desktop App Development",
+    title: "AICTE",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+      "Acquired foundational experience in Java application development, backend services, and collaborative project execution",
   },
-  {
+  /*{
     icon: <FaCode />,
     title: "Programming Languages",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
-  },
+  },*/
 ];
 
 export default function Services() {
   return (
     <section className={styles.servicesSection} id="services">
-      <h2 className={styles.heading}>SERVICES</h2>
+      <h2 className={styles.heading}>EXPERIENCE</h2>
       <div className={styles.cardGrid}>
         {services.map((service, idx) => (
           <div className={styles.card} key={idx}>

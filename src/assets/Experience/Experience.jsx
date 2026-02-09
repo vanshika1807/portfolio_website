@@ -12,13 +12,13 @@ import {
 } from "react-icons/fa";
 
 const icons = [
-  { icon: <FaAws />, name: "AWS" },
-  { icon: <FaCss3Alt />, name: "CSS3" },
+  /*{ icon: <FaAws />, name: "AWS" },*/
+  /*{ icon: <FaCss3Alt />, name: "CSS3" },*/
   { icon: <FaReact />, name: "React.js" },
   { icon: <FaHtml5 />, name: "HTML" },
   { icon: <FaJava />, name: "Java" },
   { icon: <FaJsSquare />, name: "JavaScript" },
-  { icon: <FaNodeJs />, name: "Node.js" },
+  /*{ icon: <FaNodeJs />, name: "Node.js" },*/
   { icon: <FaPython />, name: "Python" },
   { icon: <FaGitAlt />, name: "Git" },
 ];
@@ -26,7 +26,7 @@ const icons = [
 export default function Experience() {
   return (
     <section className={styles.experienceSection} id="experience">
-      <h2 className={styles.heading}>EXPERIENCE</h2>
+      <h2 className={styles.heading}>MY TOOLS</h2>
       <div className={styles.iconGrid}>
         {icons.map((item, idx) => (
           <div key={idx} className={styles.iconCard} title={item.name}>

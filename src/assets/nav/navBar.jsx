@@ -15,8 +15,8 @@ const NavBar = () => {
         <li><a href="#hero" onClick={closeMenu}>Home</a></li>
         <li><a href="#about" onClick={closeMenu}>About</a></li>
         <li><a href="#projects" onClick={closeMenu}>Portfolio</a></li>
-        <li><a href="#services" onClick={closeMenu}>Services</a></li>
-        <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
+        <li><a href="#services" onClick={closeMenu}>Experience</a></li>
+        <li><a href="#experience" onClick={closeMenu}>My Tools</a></li>
     
       </ul>
 
