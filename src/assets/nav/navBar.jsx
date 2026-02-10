@@ -14,7 +14,7 @@ const NavBar = () => {
       <ul className={`${styles.navLinks} ${isOpen ? styles.active : ""}`}>
         <li><a href="#hero" onClick={closeMenu}>Home</a></li>
         <li><a href="#about" onClick={closeMenu}>About</a></li>
-        <li><a href="#projects" onClick={closeMenu}>Portfolio</a></li>
+        <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
         <li><a href="#services" onClick={closeMenu}>Experience</a></li>
         <li><a href="#experience" onClick={closeMenu}>My Tools</a></li>
     

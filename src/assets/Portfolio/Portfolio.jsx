@@ -1,5 +1,11 @@
 import { useState } from "react";
 import styles from "./Portfolio.module.css";
+import DBSentinel from '../../assets/Portfolio/DB_Sentinel_IMG.png';
+import StreamPlus from '../../assets/Portfolio/StreamPlus.png';
+import OPERO from '../../assets/Portfolio/OPERO.png';
+import Website from '../../assets/Portfolio/Website.png';
+import FIBO from '../../assets/Portfolio/FIBO.png';
+
 
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState("mobile");
@@ -10,15 +16,17 @@ const Portfolio = () => {
         id: 1,
         title: "DB Sentinel",
         description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
-        image: "./ExpensePlus.png",
+          "It is real-time MySQL Database Monitoring Dashboard built with ...",
+        image: DBSentinel,
+        github: "https://github.com/vanshika1807/DB_Sentinel",
       },
       {
         id: 2,
         title: "StreamPlus +",
         description:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
-        image: "./ExpensePlus.png",
+          "This is a video streaming API. Can be integrated into any ...",
+        image: StreamPlus,
+        github: "https://github.com/vanshika1807/StreamPlus",
       },
     ],
     website: [
@@ -30,28 +38,31 @@ const Portfolio = () => {
       },
     ],
     desktop: [{
-        id: 4,
+        id: 3,
         title: "OPERO",
-        description: "Sample website project description...",
-        image: "./ExpensePlus.png",
+        description: "Opero is a tool that can helps the support teams in Orchestrating ...",
+        image: OPERO,
+        github: "https://github.com/vanshika1807/Opero",
       },
     {
-        id: 5,
+        id: 4,
         title: "FIBO Hackathon Project",
-        description: "Sample website project description...",
-        image: "./ExpensePlus.png",
+        description: "Java-based custom database management system project...",
+        image: FIBO,
+        github: "https://github.com/vanshika1807/DB_Sentinel_FIBO",
       },],
     other: [{
-        id: 6,
+        id: 5,
         title: "Resume Website",
-        description: "Sample website project description...",
-        image: "./ExpensePlus.png",
+        description: "This is my portfolio website...",
+        image: Website,
+        github: "https://github.com/vanshika1807/portfolio_website",
       },],
   };
 
   return (
     <section className={styles.portfolio} id="projects">
-      <h2>PORTFOLIO</h2>
+      <h2>PROJECTS</h2>
       <div className={styles.tabs}>
         <button
           className={activeTab === "mobile" ? styles.active : ""}
@@ -59,12 +70,12 @@ const Portfolio = () => {
         >
           Useful API
         </button>
-        <button
+        {/* <button
           className={activeTab === "website" ? styles.active : ""}
           onClick={() => setActiveTab("website")}
         >
           CRUD Websites
-        </button>
+        </button> */}
         <button
           className={activeTab === "desktop" ? styles.active : ""}
           onClick={() => setActiveTab("desktop")}
@@ -87,9 +98,14 @@ const Portfolio = () => {
                 <h3>PROJECT {project.id}</h3>
                 <h4>{project.title}</h4>
                 <p>{project.description}</p>
-                <a href="#readmore">
-                  <span>→</span> Read more
-                </a>
+                <a
+  href={project.github}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <span>→</span> View on GitHub
+</a>
+
               </div>
               <div className={styles.image}>
                 <img src={project.image} alt={project.title} />

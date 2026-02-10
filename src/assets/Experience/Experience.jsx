@@ -1,12 +1,14 @@
 import styles from "./Experience.module.css";
+import { SiSplunk } from "react-icons/si";
+import { SiGrafana } from "react-icons/si";
 import {
-  FaAws,
-  FaCss3Alt,
-  FaReact,
+ 
+  
+  FaConfluence,
   FaHtml5,
   FaJava,
   FaJsSquare,
-  FaNodeJs,
+  FaJira,
   FaPython,
   FaGitAlt,
 } from "react-icons/fa";
@@ -14,19 +16,21 @@ import {
 const icons = [
   /*{ icon: <FaAws />, name: "AWS" },*/
   /*{ icon: <FaCss3Alt />, name: "CSS3" },*/
-  { icon: <FaReact />, name: "React.js" },
+  { icon: <SiGrafana />, name: "Grafana" },
   { icon: <FaHtml5 />, name: "HTML" },
   { icon: <FaJava />, name: "Java" },
   { icon: <FaJsSquare />, name: "JavaScript" },
-  /*{ icon: <FaNodeJs />, name: "Node.js" },*/
+  { icon: <SiSplunk  />, name: "Splunk" },
   { icon: <FaPython />, name: "Python" },
   { icon: <FaGitAlt />, name: "Git" },
+  { icon: <FaConfluence/>, name: "Confluence" },
+  { icon: <FaJira/>, name: "Jira" },
 ];
 
 export default function Experience() {
   return (
     <section className={styles.experienceSection} id="experience">
-      <h2 className={styles.heading}>MY TOOLS</h2>
+      <h2 className={styles.heading}>TECH STACK & MONITORING TOOLS</h2>
       <div className={styles.iconGrid}>
         {icons.map((item, idx) => (
           <div key={idx} className={styles.iconCard} title={item.name}>

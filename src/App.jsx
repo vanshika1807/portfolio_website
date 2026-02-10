@@ -52,7 +52,7 @@ function App() {
 
       {/* ✅ Footer */}
       <footer className={styles.footer}>
-        <p>© 2025 Vanshika Singh. All rights reserved.</p>
+        <p>© 2026 Vanshika Singh. All rights reserved.</p>
       </footer>
     </div>
   );
